@@ -1,1 +1,1 @@
-# geoffreybellphotography.github.io
+Temp site for Geoffrey Bell Photography.
