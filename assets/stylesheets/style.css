@@ -14,23 +14,42 @@ header {
   height: 43px;
 }
 section {
+  background-image: url('../images/20110115-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: calc(100% - 43px);
   overflow-y: hidden;
 }
-img.flare {
-  position: absolute;
-	max-width: 100%;
-	top: 43px;
-	left: 0;
+div.blur {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background-image: url('../images/20110115-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: blur(40px);
+  -moz-filter: blur(40px);
+  -o-filter: blur(40px);
+  -ms-filter: blur(40px);
+  filter: blur(40px);
+  -webkit-clip-path: inset(10% 10% 40% 10%);
+  -moz-clip-path: inset(10% 10% 40% 10%);
+  -o-clip-path: inset(10% 10% 40% 10%);
+  -ms-clip-path: inset(10% 10% 40% 10%);
+  clip-path: inset(10% 10% 40% 10%);
 }
  article {
   position: absolute;
   top: 10%;
   right: 10%;
   left: 10%;
+  bottom: 40%;
   padding: 50px;
   text-align: center;
-  background-color: rgba(128, 128, 128, 0.2);
   font-size: 2rem;
   opacity: 0;
   transition: opacity 2s ease-in

@@ -9,18 +9,7 @@
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
     <script type="text/javascript">
       window.onload = function () {
-        var img = document.querySelector("#flare");
-        var show = function() {
-          var el = document.querySelector("#statement");
-          el.style.opacity = 1;
-        }
-        if (img.complete) {
-          show();
-        } else {
-          img.onload = function () {
-            show();
-          }
-        }
+        document.querySelector("#statement").style.opacity = 1;
       }
     </script>
   </head>
@@ -29,9 +18,9 @@
       <img src="assets/images/logo.png" />
     </header>
     <section>
-      <img id="flare" class="flare" src="assets/images/20110115-2.jpg" />
+      <div class="blur"></div>
       <article id="statement">
-        <p>We are in the process of moving<br/>to a new hosting service.</p>
+        <p>We are in the process of moving to a new hosting service.</p>
         <p>Please bear with us during this transition.</p>
       </article>
     </section>
